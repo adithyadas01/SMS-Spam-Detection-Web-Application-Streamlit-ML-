@@ -1,59 +1,3 @@
-# import streamlit as st
-# import pickle
-# import base64
-
-# def add_bg_image(image_file):
-#     with open(image_file, "rb") as img:
-#         encoded = base64.b64encode(img.read()).decode()
-#     st.markdown(
-#         f"""
-#         <style>
-#         .stApp {{
-#             background-image: url("data:image/jpg;base64,{encoded}");
-#             background-size: cover;
-#             background-repeat: no-repeat;
-#             background-attachment: fixed;
-#         }}
-#         .main-container {{
-#             background: rgba(255,255,255,0.75);
-#             padding: 20px;
-#             border-radius: 15px;
-#         }}
-#         </style>
-#         """,
-#         unsafe_allow_html=True
-#     )
-
-# add_bg_image("spam.jpg")
-
-# @st.cache_resource
-# def load_model():
-#     model = pickle.load(open("Multinomial_NB", "rb"))          # your model file
-#     vectorizer = pickle.load(open("CountVectorizer.pkl", "rb")) # your vectorizer
-#     return model, vectorizer
-
-# model, vectorizer = load_model()
-
-# st.markdown('<div class="main-container">', unsafe_allow_html=True)
-
-# st.title("📩 Spam Detection System")
-
-# input_text = st.text_area("Enter your message:")
-
-# if st.button("Predict"):
-#     if input_text.strip() == "":
-#         st.warning("Please enter a message.")
-#     else:
-#         transformed = vectorizer.transform([input_text])
-#         prediction = model.predict(transformed)[0]
-
-#         if prediction == 1:
-#             st.error("🚨 This message is **SPAM**!")
-#         else:
-#             st.success("✔️ This message is **NOT SPAM**.")
-
-# st.markdown('</div>', unsafe_allow_html=True)
-
 import streamlit as st
 import pickle
 import base64
@@ -153,3 +97,4 @@ if st.button("🔍 Predict", use_container_width=True):
             )
 
 st.markdown("</div>", unsafe_allow_html=True)
+
