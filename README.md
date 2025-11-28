@@ -1,0 +1,2 @@
+# SMS-Spam-Detection-Web-Application-Streamlit-ML-
+# 📩 Spam Detection Web App   A machine-learning powered **Spam Message Classifier** built using **Multinomial Naive Bayes**, **CountVectorizer**, and deployed with **Streamlit**.   The application uses a beautiful **glass-morphism UI** with a background image.  ---  ## 🚀 Features  - 🔍 Classifies text messages as **Spam** or **Not Spam**   
